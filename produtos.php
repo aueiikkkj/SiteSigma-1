@@ -13,7 +13,7 @@ include_once './includes/_header.php';
 
 <?php
         //cria uma variável que contem SQL executado
-        $sql = "SELECT * FROM produtos WHERE Ativo = 1 ORDER BY RAND() ";
+        $sql = "SELECT * FROM produtos WHERE Ativo = 1 ";
         //executa o comando SQL
         $exec = mysqli_query ($conn,$sql);
         $numProdutos = mysqli_num_rows ($exec);
